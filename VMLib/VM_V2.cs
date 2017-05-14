@@ -514,11 +514,11 @@ namespace V2
         {
             if (size == 0)
             {
-                vm = new VM(io != null ? io : new ConsoleIOPlugin());
+                vm = new VM(io ?? new ConsoleIOPlugin());
             }
             else
             {
-                vm = new VM(io != null ? io : new ConsoleIOPlugin(), size);
+                vm = new VM(io ?? new ConsoleIOPlugin(), size);
             }
         }
 
